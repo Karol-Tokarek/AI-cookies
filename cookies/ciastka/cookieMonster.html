@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cookies</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1>Obsługa ciasteczek</h1>
+  <p>Przykładowy akapit strony.</p>
+  <FORM id="baseForm">
+  <FIELDSET>
+	<LEGEND>1. Student</LEGEND>
+	<LABEL>Nazwisko</LABEL>
+	<INPUT type="text" name="nazwisko" /><br/>
+	<LABEL>Imie</LABEL>
+	<INPUT type="text" name="imie" /><br/>
+	<LABEL>Klasa</LABEL>
+	<SELECT name="klasa">
+	  <OPTION disabled selected>Wybierz</OPTION>
+	  <OPTION value="1td">1TD</OPTION>
+	  <OPTION value="1te">1TE</OPTION>
+	  <OPTION value="1tp">1TP</OPTION>
+	  <OPTION value="1tr">1TR</OPTION>
+	  <OPTION value="2dt4">2DT4</OPTION>
+	  <OPTION value="2pt4">2PT4</OPTION>
+	  <OPTION value="2dt5">2DT5</OPTION>
+	  <OPTION value="2pt5">2PT5</OPTION>
+	  <OPTION value="3td">3TD</OPTION>
+	</SELECT>
+	<br/>
+	<LABEL><INPUT type="checkbox" name="regulamin" />Przeczytałem i akceptuję regulamin</LABEL>
+	<br/>
+  </FIELDSET>
+  <FIELDSET>
+	<LEGEND>Ćwiczenie</LEGEND>
+	<LABEL>Nazwa pliku</LABEL>
+	<INPUT type="text" name="plik" /><br/>
+	<LABEL>Opis</LABEL>
+	<TEXTAREA name="opis"></TEXTAREA>
+	<br/>
+		<BUTTON type="submit" name="setBtn">Dalej</BUTTON>
+
+  </FIELDSET>
+  <FIELDSET>
+	<LEGEND>Odczyt ciasteczek</LEGEND>
+	<LABEL>Spis ciasteczek</LABEL>
+	<SELECT name="cookies" size="3">
+	  <OPTION value="student">Student</OPTION>
+	  <OPTION value="cw1">Ćwiczenie</OPTION>
+	</SELECT>
+  </FIELDSET>
+  </FORM>
+  <script src="skrypt.js"></script>
+</body>
+</html>
